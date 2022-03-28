@@ -7,22 +7,21 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "japanese homies";
+const description = "japanese warrior homies";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 20,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "background" },
+      { name: "eyes" },
+      { name: "hats" },
+      { name: "mouth" },
+      { name: "outfit" },
+      { name: "skin" },
     ],
   },
 ];
@@ -32,13 +31,13 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 2592,
+  height: 2602,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://descipunks.xyz", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
